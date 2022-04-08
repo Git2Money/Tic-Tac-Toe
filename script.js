@@ -1,17 +1,32 @@
 let gameWon = false
 let currentPlayer = 'X'
+let winningPlayer;
 const tiles = document.querySelectorAll('.tile')
+let numMoves = 0
 
 tiles.forEach((tile, i) => {
 	tile.addEventListener('click', () => {
-		tile.innerHTML = currentPlayer
-		checkGameStatus()
+		if (tile.innerHTML === '' && !gameWon) {
+			tile.innerHTML = currentPlayer
+			numMoves += 1
+			checkGameStatus()
 
-		if (gameWon) {
-			console.log(currentPlayer + " wins!")
+			if (gameWon) {
+				winningPlayer = currentPlayer
+				const printWinner = setTimeout(() => { alert("Player " + winningPlayer + " has won!") }, 750)
+				const clearBoard = setTimeout(() => clearTiles(), 500)
+				numMoves = 0
+				gameWon = false
+			}
+
+			if (numMoves === 9 && !gameWon) {
+				const printWinner = setTimeout(() => { alert("It's a draw!") }, 750)
+				const clearBoard = setTimeout(() => clearTiles(), 500)
+				numMoves = 0
+			}
+
+			switchPlayer()
 		}
-
-		switchPlayer()
 	})
 });
 
@@ -43,6 +58,11 @@ function switchPlayer() {
 	}
 }
 
+function clearTiles() {
+	tiles.forEach((tile, i) => {
+		tile.innerHTML = ''
+	})
+}
 
 
 // const options = {
