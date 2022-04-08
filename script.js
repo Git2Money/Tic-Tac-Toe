@@ -26,8 +26,7 @@ tiles.forEach((tile, i) => {
 				numMoves = 0
 			}
 
-			gameWon = false;
-
+			gameWon = false
 
 			switchPlayer()
 		}
