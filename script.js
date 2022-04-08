@@ -17,9 +17,7 @@ tiles.forEach((tile, i) => {
 				winningPlayer = currentPlayer
 				const printWinner = setTimeout(() => { alert("Player " + winningPlayer + " has won!") }, 750)
 				const clearBoard = setTimeout(() => clearTiles(), 500)
-
 				numMoves = 0
-				gameWon = false
 			}
 
 			if (numMoves === 9 && !gameWon) {
@@ -28,8 +26,7 @@ tiles.forEach((tile, i) => {
 				numMoves = 0
 			}
 
-				gameWon = false
-			}
+			gameWon = false;
 
 
 			switchPlayer()
