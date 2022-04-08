@@ -8,13 +8,16 @@ tiles.forEach((tile, i) => {
 	tile.addEventListener('click', () => {
 		if (tile.innerHTML === '' && !gameWon) {
 			tile.innerHTML = currentPlayer
+
 			numMoves += 1
+
 			checkGameStatus()
 
 			if (gameWon) {
 				winningPlayer = currentPlayer
 				const printWinner = setTimeout(() => { alert("Player " + winningPlayer + " has won!") }, 750)
 				const clearBoard = setTimeout(() => clearTiles(), 500)
+
 				numMoves = 0
 				gameWon = false
 			}
@@ -24,6 +27,10 @@ tiles.forEach((tile, i) => {
 				const clearBoard = setTimeout(() => clearTiles(), 500)
 				numMoves = 0
 			}
+
+				gameWon = false
+			}
+
 
 			switchPlayer()
 		}

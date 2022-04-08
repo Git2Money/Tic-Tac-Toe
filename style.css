@@ -1,27 +1,46 @@
+
+
+
 * {
+  background: url("https://wallpapercave.com/wp/wp1942316.jpg")
 
 }
 
 body {
+  background-size: auto;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  align-items: center;
 
 }
 
 #board {
-
+  width: 480px;
+  height: 440px;
+  margin: 120px auto;
+  justify: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .tile {
-
+    background-color: #E9DF8Bff;
+    border: 3px solid white;
+    font-family: 'Nosifer', cursive;
+    font-size: 80px;
+    color: #B20D10ff;
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    height: 150px;
 }
 
-h1 {
 
-}
+h1 {}
 
-h2 {
+h2 {}
 
-}
-
-h3 {
-
-}
+h3 {}
