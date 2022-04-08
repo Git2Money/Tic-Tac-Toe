@@ -1,3 +1,16 @@
+* {
+  background: url("https://wallpapercave.com/wp/wp1942316.jpg")
+}
+
+body {
+  background-size: auto;
+  font-family: 'Nosifer', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B20D10ff;
+  text-align: center;
+  align-items: center;
+=======
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
 * {
@@ -13,6 +26,7 @@ body {
     text-align: center;
     align-items: center;
 
+
 }
 
 #board {
@@ -26,17 +40,42 @@ body {
 }
 
 .tile {
-    background-color: #E9DF8Bff;
-    border: 3px solid white;
-    font-family: 'Nosifer', cursive;
-    font-size: 80px;
-    color: #B20D10ff;
-    border-radius: 10px 10px 10px 10px;
-    width: 150px;
-    height: 150px;
+  background-color: #E9DF8Bff;
+  border: 3px solid white;
+  font-family: 'Nosifer', cursive;
+  font-size: 80px;
+  color: #B20D10ff;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  height: 150px;
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Viga', sans-serif;
+  font-size: 100px;
+  font-color: #ff0000;
+}
 
+h2 {
+  text-align: center;
+  font-family: 'Viga', sans-serif;
+  font-size: 40px;
+  font-color: #a7d129;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Viga', sans-serif;
+  font-size: 60px;
+  font-color: #5c2A9D;
+}
+
+span {
+  font-family: 'Nosifer', cursive;
+  font-size: 120px;
+  color: #B20D10ff;
+  
 h1 {
   text-align: center;
   font-family: 'Inconsolata', sans-serif;
@@ -56,4 +95,5 @@ h3 {
   font-family: 'Inconsolata', sans-serif;
   font-size:  60px;
   font-color: #5c2A9D;
+
 }
