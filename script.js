@@ -55,6 +55,7 @@ function clearTiles() {
 	})
 }
 
+
 // const options = {
 // 	method: 'GET',
 // 	headers: {
