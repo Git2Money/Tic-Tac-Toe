@@ -27,14 +27,6 @@ body {
   flex-direction: column;
 }
 
-
-#table {
-  width: 480px;
-  height: 440px;
-  color: #fff;
-  justify: center;
-}
-
 .tile {
     background-color: #E9DF8Bff;
     border: 3px solid white;
@@ -42,7 +34,10 @@ body {
     font-size: 80px;
     color: #B20D10ff;
     border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    height: 150px;
 }
+
 
 h1 {}
 
