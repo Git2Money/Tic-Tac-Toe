@@ -1,27 +1,19 @@
-* {
+* {}
 
-}
+body {}
 
-body {
-
-}
-
-#board {
-
-}
+#board {}
 
 .tile {
-
+    background-color: black;
+    border: 3px solid white;
+    font-size: 80px;
+    color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
 }
 
-h1 {
+h1 {}
 
-}
+h2 {}
 
-h2 {
-
-}
-
-h3 {
-
-}
+h3 {}
