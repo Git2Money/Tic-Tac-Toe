@@ -54,6 +54,49 @@ function clearTiles() {
 		tile.innerHTML = ''
 	})
 }
+=======
+const tiles = document.querySelectorAll('.tile')
+
+tiles.forEach((tile, i) => {
+	tile.addEventListener('click', () => {
+		tile.innerHTML = currentPlayer
+		checkGameStatus()
+
+		if (gameWon) {
+			console.log(currentPlayer + " wins!")
+		}
+
+		switchPlayer()
+	})
+});
+
+function checkGameStatus() {
+	if (tiles[0].innerHTML === tiles[1].innerHTML && tiles[0].innerHTML === tiles[2].innerHTML && tiles[0].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[3].innerHTML === tiles[4].innerHTML && tiles[3].innerHTML === tiles[5].innerHTML && tiles[3].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[6].innerHTML === tiles[7].innerHTML && tiles[6].innerHTML === tiles[8].innerHTML && tiles[6].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[0].innerHTML === tiles[3].innerHTML && tiles[0].innerHTML === tiles[6].innerHTML && tiles[0].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[1].innerHTML === tiles[4].innerHTML && tiles[1].innerHTML === tiles[7].innerHTML && tiles[1].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[2].innerHTML === tiles[5].innerHTML && tiles[2].innerHTML === tiles[8].innerHTML && tiles[2].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[0].innerHTML === tiles[4].innerHTML && tiles[0].innerHTML === tiles[8].innerHTML && tiles[0].innerHTML === currentPlayer) {
+		gameWon = true
+	} else if (tiles[2].innerHTML === tiles[4].innerHTML && tiles[2].innerHTML === tiles[6].innerHTML && tiles[2].innerHTML === currentPlayer) {
+		gameWon = true
+	}
+}
+
+function switchPlayer() {
+	if (currentPlayer === 'X') {
+		currentPlayer = 'O'
+	} else {
+		currentPlayer = 'X'
+	}
+}
 
 // const options = {
 // 	method: 'GET',
