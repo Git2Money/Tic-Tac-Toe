@@ -25,9 +25,8 @@ tiles.forEach((tile, i) => {
 				const clearBoard = setTimeout(() => clearTiles(), 500)
 				numMoves = 0
 			}
-
-			gameWon = false;
-
+      
+			gameWon = false
 
 			switchPlayer()
 		}
